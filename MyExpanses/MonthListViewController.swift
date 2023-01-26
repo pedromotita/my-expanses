@@ -9,6 +9,8 @@ import UIKit
 
 class MonthListViewController: UIViewController {
     
+    weak var coordinator: MainCoordinator?
+    
     private var tableView = UITableView(frame: .zero, style: .insetGrouped)
     private let months = ["January", "February", "March"]
     
@@ -48,5 +50,9 @@ extension MonthListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(with: month)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        coordinator?.showMonthExpanseDetail()
     }
 }

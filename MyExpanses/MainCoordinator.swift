@@ -24,6 +24,7 @@ class MainCoordinator: Coordinator {
     
     func start() {
         let viewController = MonthListViewController()
+        viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
     
