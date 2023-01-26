@@ -8,6 +8,8 @@
 import UIKit
 
 class MonthExpansesDetailViewController: UIViewController {
+    
+    weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
