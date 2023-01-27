@@ -17,24 +17,23 @@ class BalanceDetailTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        configureCell()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func configureCell() {
-        configureTitleLabel()
-        configureDateLabel()
-        configureValueLabel()
+    public func configureCell(with expanse: Expanse) {
+        configureTitleLabel(with: expanse.title)
+        configureDateLabel(with: expanse.date)
+        configureValueLabel(with: expanse.value)
     }
     
-    private func configureTitleLabel() {
+    private func configureTitleLabel(with title: String) {
         addSubview(titleLabel)
         
         
-        titleLabel.text = "iFood"
+        titleLabel.text = title
         titleLabel.numberOfLines = 0
         
         titleLabel.adjustsFontSizeToFitWidth = true
@@ -47,10 +46,10 @@ class BalanceDetailTableViewCell: UITableViewCell {
         titleLabel.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor, constant: 0).isActive = true
     }
     
-    private func configureDateLabel() {
+    private func configureDateLabel(with date: String) {
         addSubview(dateLabel)
         
-        dateLabel.text = "14/06/2022"
+        dateLabel.text = date
         dateLabel.numberOfLines = 0
         
         dateLabel.adjustsFontSizeToFitWidth = true
@@ -64,10 +63,10 @@ class BalanceDetailTableViewCell: UITableViewCell {
         dateLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
     }
     
-    private func configureValueLabel() {
+    private func configureValueLabel(with value: Double) {
         addSubview(valueLabel)
         
-        valueLabel.text = "R$50,00"
+        valueLabel.text = "R$\(value)"
         valueLabel.numberOfLines = 0
         
         valueLabel.adjustsFontSizeToFitWidth = true

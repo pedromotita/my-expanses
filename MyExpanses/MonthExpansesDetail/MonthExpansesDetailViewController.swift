@@ -15,6 +15,8 @@ class MonthExpansesDetailViewController: UIViewController {
     private var expansesTableView = UITableView(frame: .zero, style: .insetGrouped)
     private var headerLabel = UILabel()
     
+    private var expanses = [Expanse(title: "iFood", date: "14/06/2022", value: 50.00)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,11 +73,19 @@ class MonthExpansesDetailViewController: UIViewController {
 extension MonthExpansesDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return expanses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return BalanceDetailTableViewCell()
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: BalanceDetailTableViewCell.reuseIdentifier) as? BalanceDetailTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let expanse = expanses[indexPath.row]
+        cell.configureCell(with: expanse)
+        
+        return cell
     }
     
 }

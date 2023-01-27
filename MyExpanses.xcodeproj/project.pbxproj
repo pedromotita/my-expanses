@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E80BF81F29830554002F8556 /* MonthExpansesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BF81E29830554002F8556 /* MonthExpansesDetailViewController.swift */; };
 		E827743E298432EC0027C167 /* BalanceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E827743D298432EC0027C167 /* BalanceDetailTableViewCell.swift */; };
+		E82774412984390A0027C167 /* Expanse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82774402984390A0027C167 /* Expanse.swift */; };
 		E8937F642981804C0053B93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8937F632981804C0053B93E /* AppDelegate.swift */; };
 		E8937F662981804C0053B93E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8937F652981804C0053B93E /* SceneDelegate.swift */; };
 		E8937F6D2981804E0053B93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8937F6C2981804E0053B93E /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		E80BF81E29830554002F8556 /* MonthExpansesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthExpansesDetailViewController.swift; sourceTree = "<group>"; };
 		E827743D298432EC0027C167 /* BalanceDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDetailTableViewCell.swift; sourceTree = "<group>"; };
+		E82774402984390A0027C167 /* Expanse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expanse.swift; sourceTree = "<group>"; };
 		E8937F602981804C0053B93E /* MyExpanses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExpanses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8937F632981804C0053B93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8937F652981804C0053B93E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			path = MonthExpansesDetail;
 			sourceTree = "<group>";
 		};
+		E827743F298438F20027C167 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E82774402984390A0027C167 /* Expanse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E8937F572981804C0053B93E = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		E8937F622981804C0053B93E /* MyExpanses */ = {
 			isa = PBXGroup;
 			children = (
+				E827743F298438F20027C167 /* Models */,
 				E80BF81D2983052C002F8556 /* MonthExpansesDetail */,
 				E8937F77298181CD0053B93E /* MonthListViewController.swift */,
 				E8937F792981820D0053B93E /* MonthTableViewCell.swift */,
@@ -162,6 +173,7 @@
 				E80BF81F29830554002F8556 /* MonthExpansesDetailViewController.swift in Sources */,
 				E827743E298432EC0027C167 /* BalanceDetailTableViewCell.swift in Sources */,
 				E8937F642981804C0053B93E /* AppDelegate.swift in Sources */,
+				E82774412984390A0027C167 /* Expanse.swift in Sources */,
 				E8937F662981804C0053B93E /* SceneDelegate.swift in Sources */,
 				E8937F7C298182B70053B93E /* MainCoordinator.swift in Sources */,
 				E8937F78298181CD0053B93E /* MonthListViewController.swift in Sources */,
