@@ -31,10 +31,11 @@ class MonthTableViewCell: UITableViewCell {
         
         label.numberOfLines = 0
         label.adjustsFontSizeToFitWidth = true
-        label.font = UIFont.preferredFont(forTextStyle: .body)
         label.adjustsFontForContentSizeCategory = true
+        label.font = UIFont.preferredFont(forTextStyle: .body)
         
         label.translatesAutoresizingMaskIntoConstraints = false
+        
         label.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
         label.heightAnchor.constraint(equalToConstant: 80).isActive = true

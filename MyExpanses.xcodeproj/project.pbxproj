@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E80BF81F29830554002F8556 /* MonthExpansesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BF81E29830554002F8556 /* MonthExpansesDetailViewController.swift */; };
+		E827743E298432EC0027C167 /* BalanceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E827743D298432EC0027C167 /* BalanceDetailTableViewCell.swift */; };
 		E8937F642981804C0053B93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8937F632981804C0053B93E /* AppDelegate.swift */; };
 		E8937F662981804C0053B93E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8937F652981804C0053B93E /* SceneDelegate.swift */; };
 		E8937F6D2981804E0053B93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8937F6C2981804E0053B93E /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		E80BF81E29830554002F8556 /* MonthExpansesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthExpansesDetailViewController.swift; sourceTree = "<group>"; };
+		E827743D298432EC0027C167 /* BalanceDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDetailTableViewCell.swift; sourceTree = "<group>"; };
 		E8937F602981804C0053B93E /* MyExpanses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExpanses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8937F632981804C0053B93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8937F652981804C0053B93E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				E80BF81E29830554002F8556 /* MonthExpansesDetailViewController.swift */,
+				E827743D298432EC0027C167 /* BalanceDetailTableViewCell.swift */,
 			);
 			path = MonthExpansesDetail;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				E8937F7A2981820D0053B93E /* MonthTableViewCell.swift in Sources */,
 				E80BF81F29830554002F8556 /* MonthExpansesDetailViewController.swift in Sources */,
+				E827743E298432EC0027C167 /* BalanceDetailTableViewCell.swift in Sources */,
 				E8937F642981804C0053B93E /* AppDelegate.swift in Sources */,
 				E8937F662981804C0053B93E /* SceneDelegate.swift in Sources */,
 				E8937F7C298182B70053B93E /* MainCoordinator.swift in Sources */,

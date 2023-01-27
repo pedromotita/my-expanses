@@ -56,8 +56,9 @@ class MonthExpansesDetailViewController: UIViewController {
         
         expansesTableView.delegate = self
         expansesTableView.dataSource = self
+        expansesTableView.register(BalanceDetailTableViewCell.self, forCellReuseIdentifier: BalanceDetailTableViewCell.reuseIdentifier)
         
-        expansesTableView.rowHeight = 43.5
+        expansesTableView.rowHeight = 60
         
         expansesTableView.translatesAutoresizingMaskIntoConstraints = false
         expansesTableView.topAnchor.constraint(equalTo: balanceLabel.bottomAnchor, constant: 32).isActive = true
@@ -74,7 +75,7 @@ extension MonthExpansesDetailViewController: UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return BalanceDetailTableViewCell()
     }
     
 }
