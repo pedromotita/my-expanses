@@ -34,4 +34,15 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(monthExpanceDetailViewController, animated: true)
     }
     
+    func showExpanseDetail() {
+        let expanseDetailViewController = ExpanseDetailViewController()
+        expanseDetailViewController.coordinator = self
+        
+        if let sheet = expanseDetailViewController.sheetPresentationController {
+            sheet.detents = [.medium()]
+        }
+        
+        navigationController.present(expanseDetailViewController, animated: true)
+    }
+    
 }
