@@ -11,11 +11,22 @@ class MonthExpansesDetailViewController: UIViewController {
     
     weak var coordinator: MainCoordinator?
     
+    private var viewModel: MonthExpanseDetailViewModel
+    
     private var balanceLabel = UILabel()
     private var expansesTableView = UITableView(frame: .zero, style: .insetGrouped)
     private var headerLabel = UILabel()
     
-    private var expanses = [Expanse(title: "iFood", date: "14/06/2022", value: 50.00)]
+    init(coordinator: MainCoordinator? = nil, viewModel: MonthExpanseDetailViewModel) {
+        self.coordinator = coordinator
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +84,7 @@ class MonthExpansesDetailViewController: UIViewController {
 extension MonthExpansesDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return expanses.count
+        return viewModel.expanses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,7 +93,7 @@ extension MonthExpansesDetailViewController: UITableViewDelegate, UITableViewDat
             return UITableViewCell()
         }
         
-        let expanse = expanses[indexPath.row]
+        let expanse = viewModel.expanses[indexPath.row]
         cell.configureCell(with: expanse)
         
         return cell
