@@ -18,6 +18,7 @@
 		E8937F7A2981820D0053B93E /* MonthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8937F792981820D0053B93E /* MonthTableViewCell.swift */; };
 		E8937F7C298182B70053B93E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8937F7B298182B70053B93E /* MainCoordinator.swift */; };
 		E8937F7E2981839B0053B93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8937F7D2981839B0053B93E /* Main.storyboard */; };
+		E8F0525F2996F47600EA5D1E /* MonthExpanseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0525E2996F47600EA5D1E /* MonthExpanseDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E8937F792981820D0053B93E /* MonthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTableViewCell.swift; sourceTree = "<group>"; };
 		E8937F7B298182B70053B93E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		E8937F7D2981839B0053B93E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E8F0525E2996F47600EA5D1E /* MonthExpanseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthExpanseDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				E80BF81E29830554002F8556 /* MonthExpansesDetailViewController.swift */,
 				E827743D298432EC0027C167 /* BalanceDetailTableViewCell.swift */,
+				E8F0525E2996F47600EA5D1E /* MonthExpanseDetailViewModel.swift */,
 			);
 			path = MonthExpansesDetail;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				E8937F7A2981820D0053B93E /* MonthTableViewCell.swift in Sources */,
 				E80BF81F29830554002F8556 /* MonthExpansesDetailViewController.swift in Sources */,
 				E827743E298432EC0027C167 /* BalanceDetailTableViewCell.swift in Sources */,
+				E8F0525F2996F47600EA5D1E /* MonthExpanseDetailViewModel.swift in Sources */,
 				E8937F642981804C0053B93E /* AppDelegate.swift in Sources */,
 				E82774412984390A0027C167 /* Expanse.swift in Sources */,
 				E8937F662981804C0053B93E /* SceneDelegate.swift in Sources */,

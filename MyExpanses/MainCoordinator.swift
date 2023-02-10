@@ -29,7 +29,7 @@ class MainCoordinator: Coordinator {
     }
     
     func showMonthExpanseDetail() {
-        let monthExpanceDetailViewController = MonthExpansesDetailViewController()
+        let monthExpanceDetailViewController = MonthExpansesDetailViewController(coordinator: self, viewModel: MonthExpanseDetailViewModel())
         monthExpanceDetailViewController.coordinator = self
         navigationController.pushViewController(monthExpanceDetailViewController, animated: true)
     }
